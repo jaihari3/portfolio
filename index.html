@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Hari Nataraj Portfolio</title>
+    <link rel="stylesheet" href="PW.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <SCRIPT LANGUAGE="JavaScript">
+        var message="Sorry,Right click disabled. Message from Jai Hari";
+        ///////////////////////////////////
+        function clickIE() {if (document.all) {alert(message);return false;}}
+        function clickNS(e) {if 
+        (document.layers||(document.getElementById&&!document.all)) {
+        if (e.which==2||e.which==3) {alert(message);return false;}}}
+        if (document.layers) 
+        {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+        else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+        
+        document.oncontextmenu=new Function("return false")
+        // --> 
+        </script>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfolio</h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h4>Hello, My name is</h4>
+            <h1>JAI HARI NATARAJ</h1>
+            <h3>I'm an <span>INVENTOR</span> </h3>
+        </div>
+    </div>
+    <!----About section---->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img class="profile" src="user.png" alt="">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">ABOUT ME</h1>
+                    <p class="aboutme">I am a <span>Electrical Engineer</span>  with a passion for invention.
+                        I have been working in the field of developing prototypes for over 3 years. 
+                        I am skilled in CAD, Simulation, and prototyping, and I have a deep understanding of the principles of engineering.
+                        I am passionate about creating new and innovative products that solve real-world problems. 
+                        I am also committed to making my inventions accessible to everyone.
+                        I believe that everyone should have the opportunity to benefit from the power of invention.
+                        My goal is to become a world-renowned inventor.
+                        I want to create inventions that change the world and make a positive impact on people's lives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-titles">
+        <p class="tab-links">Skills</p>
+    </div>
+</body>
+</html>

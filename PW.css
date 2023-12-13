@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+span{
+    color: red;
+}
+.hero{
+    height: 90vh;
+    width: 100%;
+    background-color: #000;
+    background-image: url("copy.gif");
+    background-position: 100% 100%;
+    background-repeat:no-repeat;
+    background-size:40%; 
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    width: 140px;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin:10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    left: 8%;
+    transform: translateY(50%);
+}
+h1{
+    color: white;
+    margin: 5px 0px 5px;
+    font-size:75px;
+    padding-top: 0%;
+}
+h2{
+    color:white;
+    letter-spacing:2px;    
+    font-size: 40px;
+}
+h4{
+    color:white;
+    letter-spacing:2px;    
+    font-size: 20px;
+}
+h3{
+    color:rgb(255, 255, 255);
+    margin-bottom: 30px;   
+    font-size: 25px;
+    letter-spacing:2px; 
+}
+/*-----------------------------*/
+#about{
+    padding: 50px 20px;
+}
+.about{
+    background-color: #0a0a0a;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   vertical-align:middle;
+}
+.col1{
+    flex-basis: 35%;
+    }
+.profile{
+    margin-left: 100px;
+    width: 350px;
+    height: 450px;
+    border-radius: 30px;
+}
+.col2{
+flex-basis: 57%;
+margin-right: 60px;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600; 
+    color: white;
+}
+.aboutme{
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    font-size: 23px;
+}
